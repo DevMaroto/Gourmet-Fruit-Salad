@@ -5,13 +5,20 @@
 }
 
 :root {
+  --fc-h1-p: rgb(199, 83, 10);
+  --fc-obs: rgb(255, 255, 255);
 
   font-size: 62.5%;
 }
 
 body {
   font-family: 'Mukta', sans-serif;
-  
+}
+
+#menu {
+  max-width: 72.6rem;
+  margin: 0 auto;
+  background:url(assets/wallpaper.jpg);
 }
 
 #box-tent {
@@ -22,29 +29,141 @@ body {
   width: 100%;
 }
 
-
-
 h1 {
   margin: 4.1rem ;
-  font-size: 3.6rem;
-  line-height: 3.0rem;
+  font-size: 5.6rem;
+  line-height: 4.5rem;
 }
 
 ul li {
   list-style: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  margin-bottom: 10.0rem;
+}
+
+p strong {
+  font-size: 1.6rem;
 }
 
 #wrapper {
   text-align: center;
   margin: 0 auto;
-
   max-width: 82.8rem;
-  
 }
-
 
  #fruit-table img {
   width: 100%;
   background: center;
  }
 
+.obs {
+  width: 18.0rem;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  background: var(--fc-h1-p);
+  color: var(--fc-obs);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.edit-font {
+  font-size: 3.5rem;
+}
+
+h1, .edit-font {
+  color: var(--fc-h1-p);
+}
+
+.box-price {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0rem;
+  justify-content: space-between;
+  /* border: solid 1px black; */
+  width: 15.0rem;
+  margin: 0 auto;
+}
+
+.value-in-ml {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+@keyframes top-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px); /* Comece acima do elemento */
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(30px); /* Pequeno salto para baixo */
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-25px); /* Salto menor para cima */
+  }
+  100% {
+    transform: translateY(0); /* Aterrisse no local */
+  }
+}
+
+.animation0 {
+  animation: top-down 700ms backwards;
+}
+
+.animation1 {
+animation: slide-left 700ms .4s backwards;
+}
+
+.animation2 {
+  animation: slide-right 700ms .8s backwards;
+}
+
+.animation3 {
+  animation: bounce-in-top 3000ms .3s backwards;
+}
