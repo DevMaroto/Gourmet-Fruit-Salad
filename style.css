@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+  
+}
+
+#box-tent {
+  height: 10.0rem;
+}
+
+#box-tent img {
+  width: 100%;
+}
+
+
+
+h1 {
+  margin: 4.1rem ;
+  font-size: 3.6rem;
+  line-height: 3.0rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+#wrapper {
+  text-align: center;
+  margin: 0 auto;
+
+  max-width: 82.8rem;
+  
+}
+
+
+ #fruit-table img {
+  width: 100%;
+  background: center;
+ }
+
